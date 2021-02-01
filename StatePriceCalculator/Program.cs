@@ -35,38 +35,38 @@ namespace StatePriceCalculator
             {
                 Console.WriteLine("Der er ingen discount");
             }
-            else if (TotalPrice >=1000 && TotalPrice < 4999)
-            {
-                TotalPriceDiscounted = TotalPrice * 0.97;
-                Console.WriteLine("Discount: 3%");
-            }
-            else if (TotalPrice >=5000 && TotalPrice < 6999)
-            {
-                TotalPriceDiscounted = TotalPrice * 0.95;
-                Console.WriteLine("Discount: 5%");
-            }
-            else if (TotalPrice >= 7000 && TotalPrice < 9999)
-            {
-                TotalPriceDiscounted = TotalPrice * 0.93;
-                Console.WriteLine("Discount: 7%");
-            }
-            else if (TotalPrice >= 10000 && TotalPrice < 49999)
-            {
-                TotalPriceDiscounted = TotalPrice * 0.90;
-                Console.WriteLine("Discount: 10%");
-            }
-            else
-            {
-                TotalPriceDiscounted = TotalPrice * 0.85;
-                Console.WriteLine("Discount: 15%");
-            }
+			    else if (TotalPrice >=1000 && TotalPrice < 4999)
+			    {
+				    TotalPriceDiscounted = TotalPrice * 0.97;
+				    Console.WriteLine("Discount: 3%");
+			    }
+                    else if (TotalPrice >=5000 && TotalPrice < 6999)
+                    {
+                        TotalPriceDiscounted = TotalPrice * 0.95;
+                        Console.WriteLine("Discount: 5%");
+                    }
+                        else if (TotalPrice >= 7000 && TotalPrice < 9999)
+                        {
+                            TotalPriceDiscounted = TotalPrice * 0.93;
+                            Console.WriteLine("Discount: 7%");
+                        }
+                            else if (TotalPrice >= 10000 && TotalPrice < 49999)
+                            {
+                                TotalPriceDiscounted = TotalPrice * 0.90;
+                                Console.WriteLine("Discount: 10%");
+                            }
+                                else
+                                {
+                                    TotalPriceDiscounted = TotalPrice * 0.85;
+                                    Console.WriteLine("Discount: 15%");
+                                }
 
 
             //Besked om samlet pris med discount
             Console.WriteLine($"Den samlede pris med discount er: {TotalPriceDiscounted} ");
 
             //Besked: Statecode på 2 bogstaver
-            Console.WriteLine("Skriv din state code");
+            Console.WriteLine("Skriv din state code(UT, NV, TX, AL, CA)");
 
             //Brugeren taster State-Code, 2 bogstaver
             StateCode = Console.ReadLine();
